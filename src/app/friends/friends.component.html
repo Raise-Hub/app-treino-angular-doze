@@ -1,0 +1,9 @@
+<h2>My Friends</h2>
+<ul class="heroes">
+  <li *ngFor="let friends of friends">
+    <button type="button">
+      <span class="badge">{{friends.id}}</span>
+      <span class="name">{{friends.name}}</span>
+    </button>
+  </li>
+</ul>
