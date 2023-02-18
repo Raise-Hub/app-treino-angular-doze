@@ -11,6 +11,11 @@ export class FriendsComponent implements OnInit {
 
   friends = FRIENDS;
 
+  selectedFriend?: Friend;
+  onSelect(friend: Friend): void {
+    this.selectedFriend = friend;
+  }
+
   constructor() { }
 
   ngOnInit(): void {

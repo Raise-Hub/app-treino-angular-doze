@@ -1,9 +1,18 @@
 <h2>My Friends</h2>
-<ul class="heroes">
+<ul class="friends">
   <li *ngFor="let friends of friends">
-    <button type="button">
+    <button type="button" (click)="onSelect(friends)">
       <span class="badge">{{friends.id}}</span>
       <span class="name">{{friends.name}}</span>
     </button>
   </li>
 </ul>
+<div *ngIf="selectedFriend">
+  <h2>{{selectedFriend.name | uppercase}} Details</h2>
+  <div>id: {{selectedFriend.id}}</div>
+  <div>
+    <label for="friend-name">Friend name: </label>
+    <input id="friend-name" [(ngModel)]="selectedFriend.name" placeholder="name">
+  </div>
+
+</div>
