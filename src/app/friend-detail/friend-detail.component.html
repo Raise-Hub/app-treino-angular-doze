@@ -1,0 +1,8 @@
+<div *ngIf="friend">
+  <h2>{{friend.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{friend.id}}</div>
+  <div>
+    <label for="friend-name">Friend name: </label>
+    <input id="friend-name" [(ngModel)]="friend.name" placeholder="name">
+  </div>
+</div>

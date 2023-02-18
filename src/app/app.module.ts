@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
  import { FriendsComponent } from './friends/friends.component';
 
 import { FormsModule } from "@angular/forms";
+import { FriendDetailComponent } from './friend-detail/friend-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FriendsComponent
+    FriendsComponent,
+    FriendDetailComponent
   ],
   imports: [
     BrowserModule,
