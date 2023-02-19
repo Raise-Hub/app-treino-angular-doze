@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 
 import { FormsModule } from "@angular/forms";
 import { FriendDetailComponent } from './friend-detail/friend-detail.component';
+import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FriendsComponent,
-    FriendDetailComponent
+    FriendDetailComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,
