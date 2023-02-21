@@ -1,10 +1,7 @@
-<h2>My Friends</h2>
 <ul class="friends">
-  <li *ngFor="let friends of friends">
-    <button [class.selected]="friends === selectedFriend" type="button" (click)="onSelect(friends)">
-      <span class="badge">{{friends.id}}</span>
-      <span class="name">{{friends.name}}</span>
-    </button>
+  <li *ngFor="let friend of friends">
+    <a routerLink="/detail/{{friend.id}}">
+      <span class="badge">{{friend.id}}</span>{{friend.name}}
+    </a>
   </li>
 </ul>
-<app-friend-detail [friend]="selectedFriend"></app-friend-detail>

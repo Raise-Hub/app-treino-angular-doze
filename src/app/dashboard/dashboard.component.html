@@ -1,0 +1,7 @@
+<p>Top Friends</p>
+<div class="friends-menu">
+  <a *ngFor="let friend of friends"
+     routerLink="/detail/{{friend.id}}">
+    {{friend.name}}
+  </a>
+</div>
